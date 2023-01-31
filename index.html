@@ -10,22 +10,7 @@
   <link rel="stylesheet" href="/assets/style.css">
   <script src="/assets/Iframe.js"></script>
   <script src="/assets/Background.js"></script>
-  <script>
-    window.addEventListener("resize", function() {
-      var menuToggle = document.getElementById("menu-toggle");
-      if (window.innerWidth < 600) {
-        menuToggle.style.display = "block";
-      } else {
-        menuToggle.style.display = "none";
-      }
-    });
-  </script>
-  <script>
-    document.getElementById("menu-toggle").addEventListener("click", function() {
-      var menu = document.getElementById("menu");
-      menu.style.display = (menu.style.display === "block") ? "none" : "block";
-    });
-  </script>
+  <script src="/assets/Menu-toggle.js"></script>
 </head>
 <body>
 <!--Menu superior-->
@@ -34,7 +19,7 @@
 </button>
 <nav id="menu">
     <ul>
-      <li><a href="#" onclick="showIframe('https://www.tabnews.com.br')">Home</a></li>
+      <li><a href="#" onclick="showIframe('slacarlho')">Home</a></li>
       <li><a href="#" onclick="showIframe('sla.html')">Sobre</a></li>
     </ul>
 </nav>
@@ -44,5 +29,4 @@
   <iframe id="iframe" src="" frameborder="0" ></iframe>
 </body>
 </html>
-
 
